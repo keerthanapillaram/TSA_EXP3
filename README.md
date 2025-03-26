@@ -1,7 +1,7 @@
 # Ex.No: 03   COMPUTE THE AUTO FUNCTION(ACF)
 ```
 Date: 26-03-2025
-Devloped by: Keerthana P
+Name : Keerthana P
 Register Number: 212223240069
 ```
 ### AIM:
@@ -52,8 +52,8 @@ for lag in lags:
   if lag == 0:
     autocorr_values.append(1)
   else:
-    auto_cov = np.sum((data[:-lag] - mean_data) * (data[lag:] - mean_data)) / N  # Autocovariance
-    autocorr_values.append(auto_cov / variance_data)  # Normalize by variance
+    auto_cov = np.sum((data[:-lag] - mean_data) * (data[lag:] - mean_data)) / N 
+    autocorr_values.append(auto_cov / variance_data)
 ```
 Display the graph
 ```py
